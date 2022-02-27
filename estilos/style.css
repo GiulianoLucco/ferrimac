@@ -122,7 +122,7 @@ nav ul li a {
 
 footer {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 15px;
     margin-top: auto;
@@ -196,8 +196,9 @@ footer ul li a {
 
 .novedades ul {
     display: grid;
-    grid-template-columns: 2fr 2fr ;
+    grid-template-columns: 2fr ;
     list-style: none;
+    margin-top: 10px;
 
 }
 
@@ -230,11 +231,16 @@ div form{
 
 @media screen and (min-width: 576px) {
     .novedades ul {
-        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-columns: 2fr 2fr ;
     }
 }
 @media screen and (min-width: 768px){
     .novedades ul{
-        grid-template-columns: 2fr 2fr 2fr 2fr;
+        grid-template-columns: 2fr 2fr 2fr 2fr;    
     }
+    footer{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
 }
