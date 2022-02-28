@@ -6,13 +6,13 @@
 
 body {
     display: grid;
-    grid-template-rows: 15% 65% 20%;
     grid-template-columns: 25% 25% 25% 25%;
     background-color: rgb(139, 139, 139);
     min-height: 100vh;
     grid-template-areas: "header header header header"
         "contenido contenido contenido contenido"
         "footer footer footer footer";
+
 
 
 }
@@ -30,36 +30,60 @@ header {
 
 }
 
+.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+}
 
+.productos ul {
+    color: rgb(252, 247, 247);
+    font-size: 15px;
+    background-color: rgb(90, 91, 92);
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    border: solid 1px black;
+    width: 400px;
+    width: 250px;
+}
 
-
-table,
-td {
-    border: 2px solid black;
-    text-align: center;
+.productos ul {
+    transition: all 2s;
 
 }
 
+.productos ul:hover {
+    transform: scale(1.5);
+
+
+}
+
+
+
+
 .titulos {
+    display: flex;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin: 30px;
     color: white;
 
+
 }
 
 .contenido {
-
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
+    margin-top: 10px;
     margin: 10px;
     grid-area: contenido;
 
-
-
 }
 
-.oferta {
+.contenido .oferta {
 
     padding: 50x;
     margin: 10px;
@@ -68,26 +92,36 @@ td {
     align-items: center;
 
 
+
+}
+
+.oferta img {
+    transition: 3s;
+}
+
+.oferta img:hover {
+    transform: translate(200px);
 }
 
 .contenedorMarcas {
     color: white;
-    background-color: rgb(247, 8, 8);
+    background-color: rgb(63, 61, 61);
     margin: 10px;
     padding: 3px;
-
 }
+
 
 .marcas {
     list-style: none;
     color: white;
     line-height: 1.6;
     font-size: 20px;
+    transition: 2s;
 
 }
 
-.marcas li :hover {
-    font-size: large;
+.marcas :hover {
+    font-size: 30px;
 }
 
 nav {
@@ -98,9 +132,6 @@ nav {
     width: 100%;
     position: relative;
 
-
-
-
 }
 
 nav ul {
@@ -109,6 +140,11 @@ nav ul {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    transition: all 2s;
+}
+
+nav ul :hover {
+    background-color: blue;
 
 }
 
@@ -125,16 +161,23 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     padding: 15px;
-    margin-top: auto;
-    bottom: 0;
+    bottom: 0px;
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(98, 98, 98, 1) 86%, rgba(175, 175, 175, 1) 100%);
     grid-area: footer;
+    width: 100%;
+    margin-top: auto;
 
 }
 
 footer ul {
     list-style: none;
+    transition: all 2s;
+}
+
+footer ul :hover {
+    font-size: 25px;
+    background-color: blue;
 }
 
 
@@ -178,13 +221,8 @@ footer ul li a {
 
 
 }
-.productos{
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-    width: 100%;
 
 
-}
 
 .titulos {
     display: flex;
@@ -196,7 +234,7 @@ footer ul li a {
 
 .novedades ul {
     display: grid;
-    grid-template-columns: 2fr ;
+    grid-template-columns: 2fr;
     list-style: none;
     margin-top: 10px;
 
@@ -209,7 +247,8 @@ footer ul li a {
     margin-left: 40px;
     width: 20%;
 }
-div form{
+
+div form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,16 +270,18 @@ div form{
 
 @media screen and (min-width: 576px) {
     .novedades ul {
-        grid-template-columns: 2fr 2fr ;
+        grid-template-columns: 2fr 2fr;
     }
 }
-@media screen and (min-width: 768px){
-    .novedades ul{
-        grid-template-columns: 2fr 2fr 2fr 2fr;    
+
+@media screen and (min-width: 768px) {
+    .novedades ul {
+        grid-template-columns: 2fr 2fr 2fr 2fr;
     }
-    footer{
+
+    footer {
         display: flex;
         justify-content: flex-start;
     }
-    
+
 }
