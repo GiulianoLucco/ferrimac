@@ -9,7 +9,8 @@ body {
     grid-template-columns: 25% 25% 25% 25%;
     background-color: rgb(139, 139, 139);
     min-height: 100vh;
-    grid-template-areas: "header header header header"
+    grid-template-areas: 
+        "header header header header"
         "contenido contenido contenido contenido"
         "footer footer footer footer";
 
@@ -33,6 +34,7 @@ header {
 .productos {
     display: flex;
     flex-direction: row;
+    justify-content:space-around;
     flex-wrap: wrap;
     margin: 10px;
     padding: 10px;
@@ -131,6 +133,7 @@ nav {
     border: 2px solid white;
     width: 100%;
     position: relative;
+    height: auto;
 
 }
 
@@ -141,6 +144,7 @@ nav ul {
     justify-content: space-around;
     flex-wrap: wrap;
     transition: all 2s;
+    list-style: none;
 }
 
 nav ul :hover {
