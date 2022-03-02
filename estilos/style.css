@@ -52,13 +52,15 @@ header {
     width: 250px;
 }
 
-.productos ul {
-    transition: all 2s;
+.productos .card {
+    transition: all 1s;
+    margin: 10px;
+    width: 250px;
 
 }
 
-.productos ul:hover {
-    transform: scale(1.5);
+.productos .card:hover {
+    transform: scale(1.1);
 
 
 }
@@ -137,28 +139,20 @@ nav {
 
 }
 
-nav ul {
-    display: flex;
-    padding: 5px;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    transition: all 2s;
-    list-style: none;
-}
+nav ul li a:hover{
 
-nav ul :hover {
-    background-color: blue;
+
+  color: blue;
+        
 
 }
 
-nav ul li a {
-
-    font-size: 30px;
-    text-decoration: none;
-    color: white;
-
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
 }
+
+
 
 footer {
     display: flex;

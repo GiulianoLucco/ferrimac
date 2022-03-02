@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Ferri Mac Productos</title>
 </head>
@@ -14,113 +17,158 @@
         <div>
             <img src="../imagenes/banferrimac.jpg" alt="logoferrimac">
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./novedades.html">Novedades</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./quienessomos.html">Quienes Somos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../imagenes/LogoFerrimacnav.jpg" alt="logo"
+                        height="30px" width="30px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="./novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="./quienessomos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <section class="contenido">
 
         <div class="productos">
-            
-            
-            <ul>
-                <li><img src="../imagenes/productos/aparejo3161.png" alt="aparejo3161" height="200px" width="200px">
-                </li>
-                <li>
+
+
+            <div class="card border border-dark border-3">
+                <img src="../imagenes/productos/aparejo3161.png" width="200px" height="200px" class="card-img-top "
+                    alt="aparejo3161">
+                <div class="card-body">
                     <h1>Aparejo electrico 3161</h1>
-                </li>
-                <li>Modelo Fema 3161 Cap:2000kg</li>
-                <li>Codigo:69350354</li>
-            </ul>
-        
-            <ul>
-                <li><img src="../imagenes/productos/aparejo900.png" alt="aparejo900" height="200px" width="200px"></li>
-                <li>
+                    <p class="card-text">Modelo Fema 3161 Cap:2000 kg</p>
+                    <p>Codigo:69350354</p>
+                </div>
+            </div>
+
+            <div class="card border border-dark border-3">
+                <img src="../imagenes/productos/aparejo900.png" width="200px" height="200px" class="card-img-top "
+                    alt="aparejo900">
+                <div class="card-body">
                     <h1>Aparejo electrico 900</h1>
-                </li>
-                <li>Modelo Fema 900 Cap:4000kg</li>
-                <li>Codigo:69350358</li>
-            </ul>
-            <ul>
-                <li><img src="../imagenes/productos/aspiradora20l.png" alt="aspiradora20l" height="200px" width="200px"></li>
-                <li><h1>Aspiradora 20L</h1></li>
-                <li>Aspiradora 20L 1.400Watts</li>
-                <li>Codigo:69350165</li>
-            </ul>
-            <ul>
-                <li><img src="../imagenes/productos/aspiradora60l.png" alt="aspiradora60l" height="200px" width="200px"></li>
-                <li><h1>Aspiradora 60L</h1></li>
-                <li>Aspirador 60L 1.200Watts</li>
-                <li>Codigo:69351050</li>
-            </ul>
-            <ul>
-                <li><img src="../imagenes/productos/destornillador.png" alt="destornillador" height="200px" width="200px"></li>
-                <li><h1>Destornillador con criquet</h1></li>
-                <li>Destornillador con criquet 50 piezas</li>
-                <li>Codigo:69401150</li>
-            </ul>
-            <ul>
-                <li><img src="../imagenes/productos/discohdz.png" alt="discohdz" height="200px" width="200px"></li>
-                <li><h1>Disco HDZ</h1></li>
-                <li>Exclusivo grano de oxido zirconado para trabajar en aceros inoxidables, aceros
-                    al carbono de todo tipo (de alta y baja aleación) y en fundición.</li>
-                <li>Codigo:6625841275</li>
-            </ul>
-            <ul>
-                <li><img src="../imagenes/productos/discopremier.png" alt="discopremier" height="200px" width="200px"></li>
-                <li><h1>Disco Premier</h1></li>
-                <li>Alto rendimiento y remoción de material. Uso en desbaste de hierro fundido y
-                    materiales no ferrosos en general</li>
-                <li>Codigo:6625841163</li>
-            </ul>
-            <ul>
-                <li><img src="../imagenes/productos/gabinete8.png" alt="gabinete8" height="200px" width="200px" ></li>
-                <li><h1>Gabinete 8 cajones</h1></li>
-                <li>Marca Vanguard 8 cajones con llaves</li>
-                <li>Codigo:69354748 </li>
-            </ul>
-            <ul>
-                <li><img src="../imagenes/productos/gabinete9.png" alt="gabinete9" height="200px" width="200px"></li>
-                <li>Gabinete 9 cajones</li>
-                <li>Marca Vanguard 9 cajones con llave</li>
-                <li>Codigo: 69354762 </li>
-            </ul>
-            <ul>
-                <li><img src="../imagenes/productos/juegopinzas.png" alt="juegopinzas" height="200px" width="200px"></li>
-                <li><h1>Juego de pinzas</h1></li>
-                <li>Mini Pinza de Punta 4,5 ''
-                    Pinza de Curva 4,5''
-                    Mini Alicate 4''
-                    Mini Pinza Combinada Universal 4,5''
-                    Mini Pinza Punta Redonda 4.5"
-                    Mini Pinza Punta Plana 4.5"
-                    Mini Pinza de Punta 6"
-                    Mini Alicate Frontal 4"
-                    Mini Alicate Punta Fina 4"
-                    Mini Pinza Punta Chata 4"</li>
-                <li>Codigo: 69435610</li>
-            </ul>
-            <ul>
-                <li><img src="../imagenes/productos/aparejo 8000.png" alt="aparejo8000" height="200px" width="200px"></li>
-                <li><h1>Aparejo 8000</h1></li>
-                <li>Modelo fema 8000 Cap 3336kg</li>
-                <li>Codigo: 69350372</li>
-            </ul>
-       
-            <ul>
-                <li><img src="../imagenes/productos/aspiradora80l.png" alt="aspiradora80l" height="200px" width="200px"></li>
-                <li><h1>Aspiradora 80L</h1></li>
-                <li>Aspiradora 80L, 2 Motores 2000 watts</li>
-                <li>Codigo:69351110</li>
-            </ul>
+                    <p class="card-text">Modelo Fema 900 Cap:4000kg</p>
+                    <p>Codigo:69350358</p>
+                </div>
+            </div>
+            <div class="card border border-dark border-3">
+                <img src="../imagenes/productos/aspiradora20l.png" width="200px" height="200px" class="card-img-top "
+                    alt="aspiradora20l">
+                <div class="card-body">
+                    <h1>Aspiradora 20L</h1>
+                    <p class="card-text">Aaspiradora 20L 1.400 1.400Watts</p>
+                    <p>Codigo:69351065</p>
+                </div>
+            </div>
+            <div class="card border border-dark border-3">
+                <img src="../imagenes/productos/aspiradora60l.png" width="200px" height="200px" class="card-img-top "
+                    alt="aspiradora60l">
+                <div class="card-body">
+                    <h1>Aspiradora 60L</h1>
+                    <p class="card-text">Aspiradora 60L 1.200Watts</p>
+                    <p>Codigo:69351050</p>
+                </div>
+            </div>
+            <div class="card border border-dark border-3">
+                <img src="../imagenes/productos/destornillador.png" width="200px" height="200px" class="card-img-top "
+                    alt="destornillador">
+                <div class="card-body">
+                    <h1>Destornillador con criquet</h1>
+                    <p class="card-text">Destornillador con criquet 25 piezas</p>
+                    <p>Codigo:69401150</p>
+                </div>
+            </div>
+            <div class="card border border-dark border-3">
+                <img src="../imagenes/productos/discohdz.png" width="200px" height="200px" class="card-img-top "
+                    alt="discohdz">
+                <div class="card-body">
+                    <h1>Disco HDZ</h1>
+                    <p class="card-text">Exclusivo grano de oxido zirconado para trabajar en aceros inoxidables, aceros
+                        al carbono de todo tipo (de alta y baja aleación) y en fundición.</p>
+                    <p>Codigo:69350358</p>
+                </div>
+            </div>
+            <div class="card border border-dark border-3">
+                <img src="../imagenes/productos/discopremier.png" width="200px" height="200px" class="card-img-top "
+                    alt="discopremier">
+                <div class="card-body">
+                    <h1>Disco Premier</h1>
+                    <p class="card-text">Alto rendimiento y remoción de material. Uso en desbaste de hierro fundido y
+                        materiales no ferrosos en general</p>
+                    <p>Codigo:6625841163</p>
+                </div>
+            </div>
+            <div class="card border border-dark border-3">
+                <img src="../imagenes/productos/gabinete8.png" width="200px" height="200px" class="card-img-top "
+                    alt="gabinete8">
+                <div class="card-body">
+                    <h1>Gabinete 8 Cajones</h1>
+                    <p class="card-text">Gabinete de 8 cajones Marca Vanguard con llaves</p>
+                    <p>Codigo:69354748</p>
+                </div>
+            </div>
+            <div class="card border border-dark border-3">
+                <img src="../imagenes/productos/gabinete9.png" width="200px" height="200px" class="card-img-top "
+                    alt="gabinete9">
+                <div class="card-body">
+                    <h1>Gabinete 9 Cajones</h1>
+                    <p class="card-text">Gabinete 9 cajones Marca Vanguard con llaves</p>
+                    <p>Codigo:69355762</p>
+                </div>
+            </div>
+            <div class="card border border-dark border-3">
+                <img src="../imagenes/productos/juegopinzas.png" width="200px" height="200px" class="card-img-top "
+                    alt="juegopinzas">
+                <div class="card-body">
+                    <h1>Juego de Pinzas</h1>
+                    <p class="card-text">Juego de pinzas 7 piezas, Marca Vanguard</p>
+                    <p>Codigo:69435610</p>
+                </div>
+            </div>
+
+            <div class="card border border-dark border-3">
+                <img src="../imagenes/productos/aparejo 8000.png" width="200px" height="200px" class="card-img-top "
+                    alt="aparejo8000">
+                <div class="card-body">
+                    <h1>Aparejo 8000</h1>
+                    <p class="card-text">Modelo Fema 8000, Cap 3336kg</p>
+                    <p>Codigo:69350372</p>
+                </div>
+            </div>
+            <div class="card border border-dark border-3">
+                <img src="../imagenes/productos/aspiradora80l.png" width="200px" height="200px" class="card-img-top "
+                    alt="aspiradora80l">
+                <div class="card-body">
+                    <h1>Aspiradora 80L</h1>
+                    <p class="card-text">Aspiradora 80L,2 motores ,2.000 1.200Watts.</p>
+                    <p>Codigo:69351110</p>
+                </div>
+            </div>
+
         </div>
+
+
     </section>
 
 
@@ -133,14 +181,15 @@
             <li><a href="./contacto.html">Contacto</a></li>
         </ul>
         <ul class="redes">
-            <li><img src="../imagenes/facebook-icon.png" alt="faceicon" width="30px" height="30px"> Facebook </li>
-            <li><img src="../imagenes/instagram-3.png" alt="instaicon" width="30px" height="30px"> Instagram</li>
-            <li><img src="../imagenes/twitter-icon-circle-blue-logo.png" alt="twittericon" width="30px" height="30px">
-                Twitter</li>
-            <li><img src="../imagenes/whatsapp-icon.png" alt="whatsapp-icon" width="30px" height="30px"> Whatsapp</li>
+            <li><i class="bi bi-facebook"></i> Facebook </li>
+            <li><i class="bi bi-instagram"></i> Instagram</li>
+            <li><i class="bi bi-twitter"></i> Twitter</li>
+            <li><i class="bi bi-whatsapp"></i> Whatsapp</li>
         </ul>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
