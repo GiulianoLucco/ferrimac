@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0; }
+  
+
+    body {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        background-color: #8b8b8b;
+        min-height: 100vh;
+        grid-template-areas: "header header header header"
+       "contenido contenido contenido contenido"
+       "footer footer footer footer"; }
