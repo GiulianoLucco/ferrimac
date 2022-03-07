@@ -11,7 +11,6 @@ body {
 
 header {
   display: flex;
-  background: #000000;
   background: linear-gradient(180deg, black 0%, #626262 86%, #afafaf 100%);
   border: 2px solid white;
   flex-direction: column;
@@ -20,14 +19,15 @@ header {
   grid-area: header; }
   header nav {
     background-color: black;
-    border: 2px solid white;
+    border: 1px solid white;
     width: 100%;
     position: relative;
-    height: auto; }
-    header nav .navbar {
+    height: auto;
+    font-size: 20px; }
+    header nav .navbar-nav {
       padding-top: 0;
       padding-bottom: 0; }
-      header nav .navbar li a:hover {
+      header nav .navbar-nav .nav-item:hover {
         background-color: blue; }
 
 .contenedorMarcas {
@@ -53,6 +53,8 @@ header {
     transition: all 1s;
     margin: 10px;
     width: 250px; }
+    .productos .card img {
+      height: 200px; }
 
 footer {
   display: flex;
@@ -60,7 +62,6 @@ footer {
   flex-wrap: wrap;
   padding: 15px;
   bottom: 0px;
-  background: black;
   background: linear-gradient(180deg, black 0%, #626262 86%, #afafaf 100%);
   grid-area: footer;
   width: 100%;
@@ -75,6 +76,8 @@ footer {
       font-size: 20px;
       padding: 10px;
       display: flex; }
+      footer ul li a:hover {
+        background-color: blue; }
   footer .redes {
     color: white;
     list-style: none;
@@ -83,6 +86,21 @@ footer {
     padding: 10px;
     display: flex;
     flex-direction: column; }
+    footer .redes li:hover {
+      background-color: blue; }
+
+.carousel {
+  margin-left: 300px;
+  margin-top: 15px;
+  width: 400px;
+  height: 350px; }
+  .carousel img {
+    height: 350px;
+    width: 400px; }
+
+.novedades ul li img {
+  width: 250px;
+  height: 250px; }
 
 .productos .card:hover {
   transform: scale(1.1); }
@@ -116,13 +134,6 @@ footer {
 
 .marcas :hover {
   font-size: 30px; }
-
-nav ul li a:hover {
-  background-color: blue; }
-
-footer ul :hover {
-  font-size: 25px;
-  background-color: blue; }
 
 .quienesSomos {
   padding: 20px;

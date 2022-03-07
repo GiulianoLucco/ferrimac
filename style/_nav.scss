@@ -1,7 +1,6 @@
 header {
     display: flex;
-    background: #000000;
-    background: linear-gradient(180deg, black 0%, #626262 86%, #afafaf 100%);
+    background:$colorHf;
     border: 2px solid white;
     flex-direction: column;
     align-items: center;
@@ -10,21 +9,22 @@ header {
 
     nav {
         background-color: black;
-        border: 2px solid white;
+        border: 1px solid white;
         width: 100%;
         position: relative;
         height: auto;
+        font-size: 20px;
 
-        .navbar {
+        .navbar-nav {
             padding-top: 0;
             padding-bottom: 0;
 
-            li a {
+            .nav-item {
                 &:hover {
                     background-color: blue;
                 }
             }
-
         }
     }
+
 }

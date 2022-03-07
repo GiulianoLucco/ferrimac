@@ -1,14 +1,19 @@
-  
   .productos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 10px;
-    padding: 10px; 
+    padding: 10px;
 
     .card {
-        transition: all 1s;
-        margin: 10px;
-        width: 250px; }
+      transition: all 1s;
+      margin: 10px;
+      width: 250px;
+      
+
+      img {
+        height: 200px;
+      }
     }
+  }

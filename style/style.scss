@@ -1,8 +1,11 @@
+@import "var";
 @import "generales";
 @import "nav";
 @import "inicio";
 @import "productos";
 @import "footer";
+@import "carousel";
+@import "novedades";
   
   
   .productos .card:hover {
@@ -39,15 +42,8 @@
     font-size: 30px; }
   
   
-  nav ul li a:hover {
-    background-color: blue; }
-    
+
  
-  footer ul :hover {
-    font-size: 25px;
-    background-color: blue; }
-  
-  
   
   
   .quienesSomos {
