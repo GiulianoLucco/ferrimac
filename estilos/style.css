@@ -7,7 +7,9 @@ body {
   grid-template-columns: 25% 25% 25% 25%;
   background-color: #8b8b8b;
   min-height: 100vh;
-  grid-template-areas: "header header header header" "contenido contenido contenido contenido" "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "contenido contenido contenido contenido" "footer footer footer footer";
+  background-image: url(../imagenes/fondoindex2.png);
+  background-size: 100% 100%; }
 
 header {
   display: flex;
@@ -58,34 +60,24 @@ header {
 
 footer {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  padding: 15px;
+  justify-content: space-around;
+  padding: 5px;
   bottom: 0px;
   background: linear-gradient(180deg, black 0%, #626262 86%, #afafaf 100%);
   grid-area: footer;
   width: 100%;
   margin-top: auto; }
-  footer ul {
-    list-style: none;
-    transition: all 2s; }
-    footer ul li a {
-      text-decoration: none;
-      line-height: 1.6;
-      color: white;
-      font-size: 20px;
-      padding: 10px;
-      display: flex; }
-      footer ul li a:hover {
-        background-color: blue; }
   footer .redes {
     color: white;
     list-style: none;
     font-size: 20px;
     line-height: 1.6;
-    padding: 10px;
+    padding: 5px;
     display: flex;
-    flex-direction: column; }
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%; }
     footer .redes li:hover {
       background-color: blue; }
 
@@ -189,5 +181,4 @@ div form {
   .novedades ul {
     grid-template-columns: 2fr 2fr 2fr 2fr; }
   footer {
-    display: flex;
-    justify-content: flex-start; } }
+    display: flex; } }
