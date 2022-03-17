@@ -1,12 +1,12 @@
 .contenedorMarcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
     background-color: #3f3d3d;
     margin: 10px;
     padding: 3px;
-    .marcas {
-        list-style: none;
-        color: white;
-        line-height: 1.6;
-        font-size: 20px;
-        transition: 2s; }
+    width: 30%;
+    height: 120px;
+
     }

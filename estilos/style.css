@@ -33,16 +33,15 @@ header {
         background-color: blue; }
 
 .contenedorMarcas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
   background-color: #3f3d3d;
   margin: 10px;
-  padding: 3px; }
-  .contenedorMarcas .marcas {
-    list-style: none;
-    color: white;
-    line-height: 1.6;
-    font-size: 20px;
-    transition: 2s; }
+  padding: 3px;
+  width: 30%;
+  height: 120px; }
 
 .productos {
   display: flex;
@@ -82,13 +81,11 @@ footer {
       background-color: blue; }
 
 .carousel {
-  margin-left: 300px;
-  margin-top: 15px;
-  width: 400px;
-  height: 350px; }
+  width: 100px;
+  height: 100px; }
   .carousel img {
-    height: 350px;
-    width: 400px; }
+    height: 40px;
+    width: 40px; }
 
 .novedades ul li img {
   width: 250px;
@@ -99,33 +96,25 @@ footer {
 
 .titulos {
   display: flex;
-  text-align: center;
+  justify-content: start;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 30px;
-  color: white; }
+  margin: 10px;
+  color: black; }
 
 .contenido {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   margin-top: 10px;
   margin: 10px;
   grid-area: contenido; }
-
-.contenido .oferta {
-  padding: 50x;
-  margin: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center; }
 
 .oferta img {
   transition: 3s; }
 
 .oferta img:hover {
   transform: translate(200px); }
-
-.marcas :hover {
-  font-size: 30px; }
 
 .quienesSomos {
   padding: 20px;
@@ -139,12 +128,6 @@ footer {
   display: grid;
   grid-template-rows: 1fr 4fr;
   width: 100%; }
-
-.titulos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 20px; }
 
 .novedades ul {
   display: grid;
@@ -160,11 +143,15 @@ footer {
 div form {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #3f3d3d;
+  color: white;
+  width: 500px; }
 
 .contacto {
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: auto;
   width: 100%;
   margin-top: 30px; }
 
@@ -172,6 +159,15 @@ div form {
   list-style: none;
   font-size: 20px;
   display: list-item; }
+
+.contacto form input {
+  padding: 10px;
+  border-radius: 3px;
+  width: 100%; }
+
+.contacto form .consulta {
+  height: 200px;
+  padding: 0; }
 
 @media screen and (min-width: 576px) {
   .novedades ul {
@@ -182,3 +178,28 @@ div form {
     grid-template-columns: 2fr 2fr 2fr 2fr; }
   footer {
     display: flex; } }
+
+.bi-facebook {
+  color: blue; }
+
+.bi-instagram {
+  color: #eb5905; }
+
+.bi-twitter {
+  color: #0066ff; }
+
+.bi-whatsapp {
+  color: #018a1e; }
+
+.nombre, .email, .telefono {
+  color: red; }
+
+.email {
+  font-family: 'Courier New', Courier, monospace; }
+
+.telefono {
+  background-color: blue; }
+
+.mixin {
+  color: #696161;
+  background-color: black; }
