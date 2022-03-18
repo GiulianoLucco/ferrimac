@@ -15,21 +15,43 @@
 .titulos {
   display: flex;
   justify-content: start;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: cursive;
   margin: 10px;
-  color: black;
+  color: white;
+  border-color: black 1px;
+  margin-left: 75px;
+  margin-top: 100px;
+  background-color: #000000ab;
+  width:770px;
+  padding: 3px;
+  border-radius: 3px;
+  
+  
+}
+
+.tituloDos{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: cursive;
+  margin-left: 75px;
+  border-radius: 3px;
+  padding: 3px;
+  background-color: #000000ab;
+  color: white;
 }
 
 .contenido {
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
   margin-top: 10px;
   margin: 10px;
   grid-area: contenido;
-  
-
+}
+.contenidoIndex{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
 }
 
@@ -106,15 +128,15 @@ div form {
   height: 200px;
   padding: 0;
 }
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   .novedades ul {
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width:576px ) and (max-width:768px){
   .novedades ul {
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
   }
 
   footer {
@@ -138,24 +160,4 @@ $redes:(
         }
         ;
 
-       .nombre{
-          color: red;
-
-        };
-        .email{
-          @extend .nombre;
-          font-family: 'Courier New', Courier, monospace;
-        };
-        .telefono{
-          @extend .nombre;
-          background-color:blue;
-        };
-
-        @mixin color ($color, $background){
-          color: $color;
-          background-color: $background;
-      }
-          
-      .mixin{
-        @include color(rgb(105, 97, 97),black);
-      }
+       

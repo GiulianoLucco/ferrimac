@@ -34,14 +34,30 @@ header {
 
 .contenedorMarcas {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
+  background-image: url(../imagenes/handyman-09.jpg);
+  background-size: 100% 100%;
   color: white;
-  background-color: #3f3d3d;
-  margin: 10px;
-  padding: 3px;
-  width: 30%;
-  height: 120px; }
+  text-align: center;
+  border: white solid 3px;
+  padding: auto;
+  margin-top: 300px; }
+  .contenedorMarcas ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 3px;
+    width: auto;
+    height: auto;
+    list-style: none; }
+    .contenedorMarcas ul li {
+      padding: 10px; }
+      .contenedorMarcas ul li img {
+        width: 150px;
+        height: 75px; }
 
 .productos {
   display: flex;
@@ -97,18 +113,39 @@ footer {
 .titulos {
   display: flex;
   justify-content: start;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: cursive;
   margin: 10px;
-  color: black; }
+  color: white;
+  border-color: black 1px;
+  margin-left: 75px;
+  margin-top: 100px;
+  background-color: #000000ab;
+  width: 770px;
+  padding: 3px;
+  border-radius: 3px; }
+
+.tituloDos {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: cursive;
+  margin-left: 75px;
+  border-radius: 3px;
+  padding: 3px;
+  background-color: #000000ab;
+  color: white; }
 
 .contenido {
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
   margin-top: 10px;
   margin: 10px;
   grid-area: contenido; }
+
+.contenidoIndex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
 
 .oferta img {
   transition: 3s; }
@@ -169,13 +206,13 @@ div form {
   height: 200px;
   padding: 0; }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   .novedades ul {
-    grid-template-columns: 2fr 2fr; } }
+    grid-template-columns: 2fr; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   .novedades ul {
-    grid-template-columns: 2fr 2fr 2fr 2fr; }
+    grid-template-columns: 2fr 2fr; }
   footer {
     display: flex; } }
 
@@ -190,16 +227,3 @@ div form {
 
 .bi-whatsapp {
   color: #018a1e; }
-
-.nombre, .email, .telefono {
-  color: red; }
-
-.email {
-  font-family: 'Courier New', Courier, monospace; }
-
-.telefono {
-  background-color: blue; }
-
-.mixin {
-  color: #696161;
-  background-color: black; }
