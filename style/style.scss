@@ -4,7 +4,6 @@
 @import "inicio";
 @import "productos";
 @import "footer";
-@import "carousel";
 @import "novedades";
 
 
@@ -14,6 +13,7 @@
 
 .titulos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   font-family: cursive;
   margin: 10px;
@@ -22,7 +22,6 @@
   margin-left: 75px;
   margin-top: 100px;
   background-color: #000000ab;
-  width:770px;
   padding: 3px;
   border-radius: 3px;
   
@@ -42,11 +41,12 @@
 
 .contenido {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   margin-top: 10px;
   margin: 10px;
   grid-area: contenido;
+  align-items: center;
+  justify-content: center;
 }
 .contenidoIndex{
   display: flex;
@@ -72,27 +72,6 @@
   margin-right: 20px;
   font-size: 20px;
   border: 3px groove white;
-}
-
-.novedades {
-  display: grid;
-  grid-template-rows: 1fr 4fr;
-  width: 100%;
-}
-
-
-
-.novedades ul {
-  display: grid;
-  grid-template-columns: 2fr;
-  list-style: none;
-  margin-top: 10px;
-}
-
-.novedades ul li {
-  margin-top: 40px;
-  margin-left: 40px;
-  width: 20%;
 }
 
 div form {
@@ -129,16 +108,12 @@ div form {
   padding: 0;
 }
 @media screen and (max-width: 576px) {
-  .novedades ul {
-    grid-template-columns: 2fr;
-  }
+  
+   
 }
 
 @media screen and (min-width:576px ) and (max-width:768px){
-  .novedades ul {
-    grid-template-columns: 2fr 2fr;
-  }
-
+  
   footer {
     display: flex;
   }

@@ -38,16 +38,16 @@ header {
   flex-direction: column;
   background-image: url(../imagenes/handyman-09.jpg);
   background-size: 100% 100%;
-  color: white;
+  color: black;
   text-align: center;
-  border: white solid 3px;
+  border: solid black 3px;
   padding: auto;
   margin-top: 300px; }
   .contenedorMarcas ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 10px;
     padding: 3px;
     width: auto;
@@ -96,22 +96,34 @@ footer {
     footer .redes li:hover {
       background-color: blue; }
 
-.carousel {
-  width: 100px;
-  height: 100px; }
-  .carousel img {
-    height: 40px;
-    width: 40px; }
-
-.novedades ul li img {
-  width: 250px;
-  height: 250px; }
+.novedades {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  justify-content: center; }
+  .novedades div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #303131;
+    width: 600px;
+    height: 600px;
+    margin: 30px; }
+    .novedades div iframe {
+      display: flex;
+      flex-wrap: wrap;
+      width: 400px;
+      height: 621px;
+      padding: 50px;
+      border-radius: 3px; }
 
 .productos .card:hover {
   transform: scale(1.1); }
 
 .titulos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   font-family: cursive;
   margin: 10px;
@@ -120,7 +132,6 @@ footer {
   margin-left: 75px;
   margin-top: 100px;
   background-color: #000000ab;
-  width: 770px;
   padding: 3px;
   border-radius: 3px; }
 
@@ -136,11 +147,12 @@ footer {
 
 .contenido {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   margin-top: 10px;
   margin: 10px;
-  grid-area: contenido; }
+  grid-area: contenido;
+  align-items: center;
+  justify-content: center; }
 
 .contenidoIndex {
   display: flex;
@@ -160,22 +172,6 @@ footer {
   margin-right: 20px;
   font-size: 20px;
   border: 3px groove white; }
-
-.novedades {
-  display: grid;
-  grid-template-rows: 1fr 4fr;
-  width: 100%; }
-
-.novedades ul {
-  display: grid;
-  grid-template-columns: 2fr;
-  list-style: none;
-  margin-top: 10px; }
-
-.novedades ul li {
-  margin-top: 40px;
-  margin-left: 40px;
-  width: 20%; }
 
 div form {
   display: flex;
@@ -206,13 +202,7 @@ div form {
   height: 200px;
   padding: 0; }
 
-@media screen and (max-width: 576px) {
-  .novedades ul {
-    grid-template-columns: 2fr; } }
-
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  .novedades ul {
-    grid-template-columns: 2fr 2fr; }
   footer {
     display: flex; } }
 

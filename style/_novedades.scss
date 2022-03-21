@@ -1,10 +1,27 @@
-.novedades{
-    ul{
-        li{
-            img{
-                width: 250px;
-                height: 250px;
-            }
+.novedades {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    justify-content: center;
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgb(48, 49, 49);
+        width: 600px;
+        height: 600px;
+        margin: 30px;
+
+       
+        iframe {
+            display: flex;
+            flex-wrap: wrap;
+            width: 400px;
+            height: 621px;
+            padding: 50px;
+            border-radius: 3px;
         }
     }
 }
