@@ -14,21 +14,21 @@
 .titulos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
   font-family: cursive;
   margin: 10px;
   color: white;
-  border-color: black 1px;
   margin-left: 75px;
   margin-top: 100px;
   background-color: #000000ab;
   padding: 3px;
   border-radius: 3px;
-  
-  
+  width: fit-content;
+
+
+
 }
 
-.tituloDos{
+.tituloDos {
   display: flex;
   flex-wrap: wrap;
   font-family: cursive;
@@ -48,7 +48,8 @@
   align-items: center;
   justify-content: center;
 }
-.contenidoIndex{
+
+.contenidoIndex {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -68,10 +69,17 @@
 .quienesSomos {
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px;
   font-size: 20px;
   border: 3px groove white;
+
+  p {
+    background-color: #000000ab;
+    border-radius: 3px;
+    padding: 30px;
+    color: white;
+
+  }
 }
 
 div form {
@@ -79,14 +87,14 @@ div form {
   flex-direction: column;
   align-items: flex-start;
   padding: 10px;
-  background-color:  #3f3d3d;
+  background-color: #3f3d3d;
   color: white;
   width: 500px;
 }
 
 .contacto {
   display: grid;
-  grid-template-rows: auto ;
+  grid-template-rows: auto;
   width: 100%;
   margin-top: 30px;
 }
@@ -97,42 +105,47 @@ div form {
   display: list-item;
 }
 
-.contacto form input{
+.contacto form input {
   padding: 10px;
   border-radius: 3px;
   width: 100%;
 }
 
-.contacto form .consulta{
+.contacto form .consulta {
   height: 200px;
   padding: 0;
 }
+
 @media screen and (max-width: 576px) {
+  footer .redes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .titulos{
+      margin-left: 0;
+    }
+    .tituloDos{
+      margin-left:0px;
+    }
   
-   
+
 }
 
-@media screen and (min-width:576px ) and (max-width:768px){
-  
-  footer {
-    display: flex;
+
+$redes:(facebook:rgb(0, 0, 255),
+  instagram:rgb(235, 89, 5),
+  twitter:rgb(0, 102, 255),
+  whatsapp:rgb(1, 138, 30),
+);
+
+
+@each $red,
+$color in $redes {
+  .bi-#{$red} {
+    color: $color;
   }
 }
 
-
-$redes:(
-        facebook:rgb(0, 0, 255),
-        instagram:rgb(235, 89, 5),
-        twitter:rgb(0, 102, 255),
-        whatsapp:rgb(1, 138, 30),
-        );
-        
-
-        @each $red, $color in $redes{
-          .bi-#{$red}{
-            color: $color;
-          }
-        }
-        ;
-
-       
+;

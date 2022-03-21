@@ -100,15 +100,14 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-top: 100px;
-  justify-content: center; }
+  padding-top: 100px; }
   .novedades div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #303131;
-    width: 600px;
-    height: 600px;
+    width: 410px;
+    height: 630px;
     margin: 30px; }
     .novedades div iframe {
       display: flex;
@@ -124,16 +123,15 @@ footer {
 .titulos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
   font-family: cursive;
   margin: 10px;
   color: white;
-  border-color: black 1px;
   margin-left: 75px;
   margin-top: 100px;
   background-color: #000000ab;
   padding: 3px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  width: fit-content; }
 
 .tituloDos {
   display: flex;
@@ -168,10 +166,14 @@ footer {
 .quienesSomos {
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px;
   font-size: 20px;
   border: 3px groove white; }
+  .quienesSomos p {
+    background-color: #000000ab;
+    border-radius: 3px;
+    padding: 30px;
+    color: white; }
 
 div form {
   display: flex;
@@ -202,9 +204,16 @@ div form {
   height: 200px;
   padding: 0; }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  footer {
-    display: flex; } }
+@media screen and (max-width: 576px) {
+  footer .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .titulos {
+    margin-left: 0; }
+  .tituloDos {
+    margin-left: 0px; } }
 
 .bi-facebook {
   color: blue; }
