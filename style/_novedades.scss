@@ -1,27 +1,39 @@
+.imagenNovedades{
+    margin-top: 100px;    
+    width: 100%;
+        img{
+            border: 3px solid black;
+            border-radius: 1cm;
+            width: 100%;
+        }
+    }
+
+
+
+
 .novedades {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 100px;
+    justify-content: space-around;
+    padding-top: 50px;
     
 
     div {
-        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         background-color: rgb(48, 49, 49);
-        width: 410px;
+        width: 415px;
         height: 630px;
-        margin: 30px;
+        margin: 100px;
 
        
         iframe {
-            display: flex;
             flex-wrap: wrap;
-            width: 400px;
-            height: 621px;
+            width: 100%;
+            height: 640px;
             padding: 50px;
-            border-radius: 3px;
+           
         }
     }
 }

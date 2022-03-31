@@ -1,8 +1,14 @@
-
+.imagenIndex{
+    width: 100%;
+    img{
+        border: 3px solid black;
+        border-radius: 1cm;
+        width: 100%;
+    }
+}
 
 .contenedorMarcas {
-    display: flex;
-    flex-wrap: wrap;
+   
     flex-direction: column;
     background-image: url(../imagenes/handyman-09.jpg);
     background-size: 100% 100%;
@@ -10,7 +16,8 @@
     text-align: center;
     border: solid black 3px;
     padding: auto;
-    margin-top: 300px;
+    margin-top: 100px;
+    border-radius: 1cm;
     ul {
         display: flex;
         flex-direction: row;

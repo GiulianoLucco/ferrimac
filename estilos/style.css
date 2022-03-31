@@ -8,8 +8,7 @@ body {
   background-color: #8b8b8b;
   min-height: 100vh;
   grid-template-areas: "header header header header" "contenido contenido contenido contenido" "footer footer footer footer";
-  background-image: url(../imagenes/fondoindex2.png);
-  background-size: 100% 100%; }
+  background-color: #686868; }
 
 header {
   display: flex;
@@ -26,15 +25,22 @@ header {
     position: relative;
     height: auto;
     font-size: 20px; }
+    header nav .navbar-collapse {
+      flex-grow: initial; }
     header nav .navbar-nav {
       padding-top: 0;
       padding-bottom: 0; }
       header nav .navbar-nav .nav-item:hover {
         background-color: blue; }
 
+.imagenIndex {
+  width: 100%; }
+  .imagenIndex img {
+    border: 3px solid black;
+    border-radius: 1cm;
+    width: 100%; }
+
 .contenedorMarcas {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   background-image: url(../imagenes/handyman-09.jpg);
   background-size: 100% 100%;
@@ -42,7 +48,8 @@ header {
   text-align: center;
   border: solid black 3px;
   padding: auto;
-  margin-top: 300px; }
+  margin-top: 100px;
+  border-radius: 1cm; }
   .contenedorMarcas ul {
     display: flex;
     flex-direction: row;
@@ -65,7 +72,8 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 10px;
-  padding: 10px; }
+  padding: 10px;
+  margin-top: 220px; }
   .productos .card {
     transition: all 1s;
     margin: 10px;
@@ -96,26 +104,32 @@ footer {
     footer .redes li:hover {
       background-color: blue; }
 
+.imagenNovedades {
+  margin-top: 100px;
+  width: 100%; }
+  .imagenNovedades img {
+    border: 3px solid black;
+    border-radius: 1cm;
+    width: 100%; }
+
 .novedades {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 100px; }
+  justify-content: space-around;
+  padding-top: 50px; }
   .novedades div {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #303131;
-    width: 410px;
+    width: 415px;
     height: 630px;
-    margin: 30px; }
+    margin: 100px; }
     .novedades div iframe {
-      display: flex;
       flex-wrap: wrap;
-      width: 400px;
-      height: 621px;
-      padding: 50px;
-      border-radius: 3px; }
+      width: 100%;
+      height: 640px;
+      padding: 50px; }
 
 .productos .card:hover {
   transform: scale(1.1); }
@@ -123,7 +137,7 @@ footer {
 .titulos {
   display: flex;
   flex-wrap: wrap;
-  font-family: cursive;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 10px;
   color: white;
   margin-left: 75px;
@@ -136,7 +150,7 @@ footer {
 .tituloDos {
   display: flex;
   flex-wrap: wrap;
-  font-family: cursive;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-left: 75px;
   border-radius: 3px;
   padding: 3px;
@@ -176,7 +190,6 @@ footer {
     color: white; }
 
 div form {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 10px;
@@ -187,13 +200,15 @@ div form {
 
 .contacto {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   margin-top: 100px;
   padding: 50px; }
   .contacto .imagenContacto {
     background-color: #3f3d3db0;
     margin: 20px;
-    border-radius: 3px; }
+    border-radius: 1px; }
     .contacto .imagenContacto img {
       padding: 30px;
       width: 100%; }
